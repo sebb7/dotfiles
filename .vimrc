@@ -2,27 +2,32 @@ execute pathogen#infect()
 syntax on
 
 filetype plugin indent on
-:set shiftwidth=4
-:set expandtab
+set shiftwidth=4
+set expandtab
 
 " highlight matching brackets
-:set showmatch
+set showmatch
 
 " display line numbers
-:set number
+set number
 
-"set termguicolors
-colorscheme one
-set background=dark
-let g:ariline_theme = 'one'
+" theme
+set termguicolors
+colorscheme base16-onedark
+let g:airline_theme='base16'
+
+" cursorline
+set cursorline
+
+" make backspace work like most other programs
+set backspace=2
 
 " ^n colots options
 highlight Pmenu ctermbg=white guibg=black ctermfg=grey
 highlight PmenuSel ctermbg=white guibg=black ctermfg=black
 
-" 80 character line
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" 81 character line
+set colorcolumn=81
 
 " nerdtree at start
 autocmd StdinReadPre * let s:std_in=1
