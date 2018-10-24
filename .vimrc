@@ -40,3 +40,13 @@ if "Linux" == s:os
 elseif "Darwin" == s:os
 	noremap <Leader>y "+y
 endif
+
+" plugins:
+" alchemist.vim
+" nerdtree.vim
+" vim-airline-themes
+" vim-markdown-preview
+" base16-vim
+" vim-airline
+" vim-elixir
+" vim-mix-format
