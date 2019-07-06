@@ -12,9 +12,9 @@ set showmatch
 set number
 
 " theme
-set termguicolors
-colorscheme base16-onedark
-let g:airline_theme='base16'
+let g:airline_theme='$THEME_NAME'
+set background=$BACKGROUND_TYPE
+colorscheme $THEME_NAME
 
 " cursorline
 set cursorline
@@ -29,10 +29,6 @@ highlight PmenuSel ctermbg=white guibg=black ctermfg=black
 " 81 character line
 set colorcolumn=81
 
-" nerdtree at start
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif"
-
 " Copy to global clipboard not just yank into buffer
 let s:os = substitute(system('uname'), "\n", "", "")
 if "Linux" == s:os
@@ -42,11 +38,8 @@ elseif "Darwin" == s:os
 endif
 
 " plugins:
-" alchemist.vim
-" nerdtree.vim
-" vim-airline-themes
-" vim-markdown-preview
-" base16-vim
-" vim-airline
-" vim-elixir
-" vim-mix-format
+" https://github.com/vim-airline/vim-airline.git
+" https://github.com/vim-airline/vim-airline-themes.git
+" https://github.com/mhinz/vim-mix-format.git
+" https://github.com/elixir-editors/vim-elixir.git
+" https://github.com/slashmili/alchemist.vim.git
