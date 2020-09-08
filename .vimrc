@@ -12,9 +12,9 @@ set showmatch
 set number
 
 " theme
-let g:airline_theme='$THEME_NAME'
-set background=$BACKGROUND_TYPE
-colorscheme $THEME_NAME
+let g:airline_theme='solarized'
+set background=light
+colorscheme solarized
 
 " cursorline
 set cursorline
@@ -43,3 +43,4 @@ endif
 " https://github.com/mhinz/vim-mix-format.git
 " https://github.com/elixir-editors/vim-elixir.git
 " https://github.com/slashmili/alchemist.vim.git
+" https://github.com/altercation/vim-colors-solarized.git
