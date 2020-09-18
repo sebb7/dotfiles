@@ -37,6 +37,10 @@ elseif "Darwin" == s:os
 	noremap <Leader>y "+y
 endif
 
+" Showing trailing spaces
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$/
+
 " plugins:
 " https://github.com/vim-airline/vim-airline.git
 " https://github.com/vim-airline/vim-airline-themes.git
