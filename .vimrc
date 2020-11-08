@@ -29,9 +29,9 @@ highlight PmenuSel ctermbg=white guibg=black ctermfg=black
 " 81 character line
 set colorcolumn=81
 
-" Copy to primary clipboard
-noremap <Leader>y "*y
-noremap <Leader>p "*p
+" Copy to primary system clipboard
+noremap <Leader>y "+y
+noremap <Leader>p "+p
 
 " Showing trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
