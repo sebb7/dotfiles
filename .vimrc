@@ -29,7 +29,7 @@ highlight PmenuSel ctermbg=white guibg=black ctermfg=black
 " 81 character line
 set colorcolumn=81
 
-" Copy to primary system clipboard
+" Copy to system clipboard
 noremap <Leader>y "+y
 noremap <Leader>p "+p
 
