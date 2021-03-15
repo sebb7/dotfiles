@@ -5,6 +5,9 @@ filetype plugin indent on
 set shiftwidth=4
 set expandtab
 
+" remap leader
+let mapleader="'"
+
 " highlight matching brackets
 set showmatch
 
