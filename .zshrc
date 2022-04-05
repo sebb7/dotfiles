@@ -21,3 +21,5 @@ POWERLEVEL9K_COLOR_SCHEME='light'
 . $HOME/.asdf/completions/asdf.bash
 
 eval "$(direnv hook zsh)"
+
+export ERL_AFLAGS="-kernel shell_history enabled"
